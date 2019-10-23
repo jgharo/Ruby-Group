@@ -10,6 +10,49 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 0) do
 
+=======
+ActiveRecord::Schema.define(version: 2019_10_23_015229) do
+
+  create_table "animals", force: :cascade do |t|
+    t.string "name"
+    t.string "species"
+    t.string "gender"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "date_of_infections", force: :cascade do |t|
+    t.datetime "date_of_infection"
+    t.integer "animal_id", null: false
+    t.integer "disease_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["animal_id"], name: "index_date_of_infections_on_animal_id"
+    t.index ["disease_id"], name: "index_date_of_infections_on_disease_id"
+  end
+
+  create_table "diseases", force: :cascade do |t|
+    t.string "name"
+    t.string "source"
+    t.string "severity"
+    t.boolean "curable"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "owners", force: :cascade do |t|
+    t.string "name"
+    t.string "phone"
+    t.string "address"
+    t.string "email"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  add_foreign_key "date_of_infections", "animals"
+  add_foreign_key "date_of_infections", "diseases"
+>>>>>>> ecd01d0952dafcddbd8835044466d93c50efe8ca
 end

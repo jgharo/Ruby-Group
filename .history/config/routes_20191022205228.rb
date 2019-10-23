@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  root "animals#index"
   resources :date_of_infections
   resources :owners
   resources :diseases
