@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_of_infection: 2019-10-22 20:52:29
+  animal: one
+  disease: one
+
+two:
+  date_of_infection: 2019-10-22 20:52:29
+  animal: two
+  disease: two
