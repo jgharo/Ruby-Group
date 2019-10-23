@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root "animals#index"
+  root "animal#index"
   resources :date_of_infections
   resources :owners
   resources :diseases
