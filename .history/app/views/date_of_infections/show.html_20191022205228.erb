@@ -7,12 +7,12 @@
 
 <p>
   <strong>Animal:</strong>
-  <%= @date_of_infection.animal.name%>
+  <%= @date_of_infection.animal_id %>
 </p>
 
 <p>
   <strong>Disease:</strong>
-  <%= @date_of_infection.disease.name %>
+  <%= @date_of_infection.disease_id %>
 </p>
 
 <%= link_to 'Edit', edit_date_of_infection_path(@date_of_infection) %> |
