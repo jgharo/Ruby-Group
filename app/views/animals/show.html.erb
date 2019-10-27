@@ -15,5 +15,18 @@
   <%= @animal.gender %>
 </p>
 
+<p>
+<h3> Diseases </h3>
+<table>
+  <tr>
+    Disease
+  </tr>
+  <%@animal.diseases.each do |disease| %>
+  <tr> <td><%= disease.name %></td>
+  </tr>
+  <% end %>
+</table>
+</p>
+
 <%= link_to 'Edit', edit_animal_path(@animal) %> |
 <%= link_to 'Back', animals_path %>
