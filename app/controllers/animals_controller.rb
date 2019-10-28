@@ -69,6 +69,6 @@ class AnimalsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def animal_params
-      params.require(:animal).permit(:name, :species, :gender)
+      params.require(:animal).permit(:name, :species, :gender, diseases_attributes: [:id, :name, :source, :severity, :curable ])
     end
 end
