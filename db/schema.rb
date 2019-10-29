@@ -10,10 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 0) do
-
-=======
 ActiveRecord::Schema.define(version: 2019_10_23_015229) do
 
   create_table "animals", force: :cascade do |t|
@@ -54,5 +50,4 @@ ActiveRecord::Schema.define(version: 2019_10_23_015229) do
 
   add_foreign_key "date_of_infections", "animals"
   add_foreign_key "date_of_infections", "diseases"
->>>>>>> ecd01d0952dafcddbd8835044466d93c50efe8ca
 end
